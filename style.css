@@ -1,0 +1,159 @@
+/* navbar */
+.subNav{
+    list-style: none !important;
+    padding: 0;
+    display: none;
+} 
+.nav-item:hover > ul {
+    display: block;
+    position: absolute;
+    transition: ease-in-out 1s;
+    z-index: 20;
+}
+.subUser{
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+.user:hover> ul{
+    display: block;
+    position: absolute;
+    z-index: 20;
+}
+.input-group-prepend{
+    margin: 0 !important;
+    padding: 6px !important;
+}
+.header{
+    padding: 8px 16px ;
+    margin: 0;
+}
+.user{
+    padding: 5px 0;
+}
+/* sidenav*/
+.sidenav{
+    width: 15%;
+    margin: 0 0.5% 0 0;
+    padding: 0;
+}
+.sidenav-nav{
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+    height: 75vh;
+}
+.sidenav-nav, .sidenav-nav li ul{
+    list-style: none;
+    padding: 0;
+}
+.sidenav-nav li ul{
+    display: none;
+}
+.sidenav-nav li:hover > ul{
+    display: block;
+    position: relative;
+}
+.sidenav-nav li a{
+    display: block;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+}
+.sidenav-nav li ul li a{
+    display: block;
+    text-align: center;
+}
+/*carousel*/
+.holder{
+    display: flex;
+    margin-top: 10px;
+}
+.slider{
+    width: 84%;
+    box-shadow: 2px 4px 5px #000 ;
+}
+.carousel-item img{
+    height: 75vh;
+}
+.feature{
+    margin: 50px 0;
+}
+.feature img{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    transition: 1s;
+}
+.feature img:hover{
+    transform:scale(1.05);
+}
+.card-image-top{
+    width: 100%;
+}
+.onsale{
+    margin-top: 50px;
+}
+/* overlay*/
+.overlayBtn{
+    border: none;
+    display: block;
+    margin: 5px;
+}
+.overlay{
+    visibility:hidden;
+    transition:0.5s;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.imgContainer:hover > .overlay{
+    visibility:visible;
+    top: 8px;
+    left: 20px;
+}
+@media only screen and (min-width:768px){
+    .togg{
+        display: none !important;
+    }
+}
+.useful a, .company a{
+    display: block;
+    margin-top: 15px;
+}
+footer {
+    margin-top: 50px;
+    background-color: #000;
+}
+footer *{
+    color: #fff;
+}
+.footer{
+    padding: 30px;
+}
+/* font awesome*/
+.fa-star, .fa-star-half-o{
+    color: #ffa500;
+}
+@media only screen and (max-width:767px){
+    .slider{
+        width: 100%;
+    }
+    .sidenav{
+        display: none;
+    }
+    .toggling{
+        display: block;
+        position: fixed;
+        z-index: 20;
+        width: 40%;
+    }
+    .carousel-item{
+        height: 50vh;
+    }
+    .head{
+        margin-top: 10px;
+    }  
+    .marg-sm{
+        margin-top: 10px;
+    } 
+}
